@@ -81,16 +81,19 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.about_us) {
 
             Intent i = new Intent(this,AboutUsActivity.class);
             startActivity(i);
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.our_program) {
 
-        } else if (id == R.id.nav_slideshow) {
+            Intent i = new Intent(this,OurProgramActivity.class);
+            startActivity(i);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.ginvolved) {
+
+        } else if (id == R.id.stories) {
 
         } else if (id == R.id.nav_share) {
 

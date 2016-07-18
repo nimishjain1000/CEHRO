@@ -25,4 +25,13 @@
     <string name="Over">Overview</string>
     <string name="vision">Our Vision</string>
     <string name="Team">Our Team</string>
+
+
+    <string name="Prog1">Prog1</string>
+    <string name="Prog2">Prog2</string>
+    <string name="Prog3">Prog3</string>
+    <string name="Prog4">Prog4</string>
+    <string name="Prog5">Prog5</string>
+    <string name="Prog6">Prog6</string>
+
 </resources>
