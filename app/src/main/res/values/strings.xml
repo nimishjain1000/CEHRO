@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Cehro India</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Centre for Education and Health Research Organization, founded on 12th March 2012, is a non-profit making autonomous body registered under 1860 Societies Act. It is a social venture formed by the students from NSIT, JAMIA, IIIT etc. and has evolved into an organization where the motto is to help anyone with a will to achieve but is held back by lack of resources.</string>
+
+    <string name="hello_blank_fragment1">CEHRO believes in not letting poverty come in way of success. We strive to make lives better for the impoverished people and the neglected in our society- the migrant laborers and workers involved in other menial jobs, by helping children from these families achieve academically and extracurricularly, so that they can build a better future for themselves.</string>
+
+    <string name="hello_blank_fragment2">For all round development it is essential to consider health as an important parameter. Often health issues come in the way of a child’s education. Hence, we at CEHRO consider it important to sensitize them towards health and hygiene.</string>
+    <string name="Our_Vision">Overview</string>
+    <string name="Over">Overview</string>
+    <string name="vision">Our Vision</string>
+    <string name="Team">Our Team</string>
+</resources>
