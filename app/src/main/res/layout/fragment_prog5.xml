@@ -1,13 +1,62 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/colorAccent3"
+    android:layout_height="fill_parent">
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.arora.cehroindia.Prog5">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Prog5" />
+        android:orientation="vertical"
+        android:background="@color/colorAccent3"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent1"
+            android:layout_height="wrap_content"
+            android:text="Health Hygeine practices"
+            android:textSize="31sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@color/colorAccent"/>
+        <TextView
+            android:background="@color/colorAccent1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/Prog5.1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent1"
+            android:text="@string/Prog5.2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent1"
+            android:text="@string/Prog5.3" />
+
+    </LinearLayout>
 
 </FrameLayout>
+</ScrollView>

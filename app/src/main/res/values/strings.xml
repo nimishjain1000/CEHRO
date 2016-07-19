@@ -28,10 +28,28 @@
 
 
     <string name="Prog1">Prog1</string>
-    <string name="Prog2">Prog2</string>
-    <string name="Prog3">Prog3</string>
-    <string name="Prog4">Prog4</string>
-    <string name="Prog5">Prog5</string>
-    <string name="Prog6">Prog6</string>
+    <string name="Prog1.1">Unless every Indian irrespective of his/her socio-economic background get education India can’t be ‘educated’. Keeping this into consideration, we aim to provide education to children ageing between 6-18 years irrespective of their status of being enrolled with any formal educational institution or not.</string>
+    <string name="Prog1.2">We provide remedial classes to ‘enrolled’ students while bridge courses to drop-outs. We follow the curriculum of NCERT for both the categories of students.</string>
+    <string name="Prog1.3">Parent-teacher meeting is keep component of it. Through which we not only attempt to ensure parents’ involvement in their wards’ education but also use this platform to make them aware of education and its importance. More than 300 children have benefited directly from Educating india programme since 2012.</string>
 
+    <string name="Prog2">Prog2</string>
+    <string name="Prog2.1">Under this programme, we aim to nurture ‘volunteerism’ and ‘teaching skills’ of students. This will also help those students in building their self-confidence and grow as individual.</string>
+    <string name="Prog2.2">So, we engage some of the senior students (senior and senior secondary students) in imparting education to junior students enrolled in primary education on the basis of their willingness and class-performances. Since 2013, 25 of our students get benefitted from this.</string>
+
+    <string name="Prog3">Prog3</string>
+    <string name="Prog3.1">Spoken English and Computer education are the two key components of employability, now a day. Therefore, under our livelihood programme, we attempt to make underprivileged youths (ageing between 18-35 years) employable through Spoken English in collaboration with TEACH INDIA while hand-in experience of MS Office as computer education from our own experts.</string>
+    <string name="Prog3.2">British Council and Times of India group are behind Teach India programme. Besides, we also work on personality development of the students. Since 2014, this programme has benefitted 70 students till today.</string>
+
+    <string name="Prog4">Prog4</string>
+    <string name="Prog4.1">In the ‘digitized world’ of today, computer education has become need of hour for every individual. This has motivated us to come up with our ‘Target 20 Twenty’ programme.
+Under this programme, we provide basic knowledge of computer to all students enroll with us from our experienced and technocrat volunteers.</string>
+
+    <string name="Prog5">Prog5</string>
+    <string name="Prog5.1">Our clientele are the ones who mostly reside in the slums in unhealthy and unhygienic conditions, therefore, very prone to health hazards.</string>
+    <string name="Prog5.2">Keeping this into consideration, knowledge and practice of hygiene activities has been identified as the best possible and feasible option to be or remain be healthy.</string>
+    <string name="Prog5.3">We engage doctors or medical professionals in this and attempt to make sure that every of our students get benefitted of this.</string>
+
+    <string name="Prog6">Prog6</string>
+    <string name="Prog6.1">Harnessing the talent of children enrolled with us; in extra-curricular activities, is also one of our prime motives as we believe that exposure to extra-curricular activities (music, dance, painting etc.) is a must for ‘holistic development’.</string>
+    <string name="Prog6.2">Thus, we arrange special classes for music, dance and painting for all our students. Some of these students are very talented whom we specially provide more opportunities and a platform to nurture their skill further and showcase their talent to the world because anyhow, poverty should not be the barrier to one’s growth and success in life.</string>
 </resources>
