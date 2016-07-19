@@ -34,4 +34,13 @@
     <string name="Prog5">Prog5</string>
     <string name="Prog6">Prog6</string>
 
+    <string name="Vol">Volunteer</string>
+    <string name="Donate">Donate</string>
+    <string name="Resp">Responsibility</string>
+    <string name="Csr">CSR</string>
+
+
+
+
+
 </resources>
