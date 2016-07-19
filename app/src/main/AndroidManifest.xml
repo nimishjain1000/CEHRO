@@ -19,8 +19,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:label = "About Us"
-            android:name=".AboutUsActivity"></activity>
+            android:name=".AboutUsActivity"
+            android:label="About Us" />
+        <activity android:name=".GetInvolvedActivity" />
+        <activity
+            android:label="Our Program"
+            android:name=".OurProgramActivity"></activity>
     </application>
 
 </manifest>
