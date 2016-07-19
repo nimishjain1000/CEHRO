@@ -49,7 +49,19 @@ Under this programme, we provide basic knowledge of computer to all students enr
     <string name="Prog5.2">Keeping this into consideration, knowledge and practice of hygiene activities has been identified as the best possible and feasible option to be or remain be healthy.</string>
     <string name="Prog5.3">We engage doctors or medical professionals in this and attempt to make sure that every of our students get benefitted of this.</string>
 
+
+    <string name="Vol">Volunteer</string>
+    <string name="Donate">Donate</string>
+    <string name="Resp">Responsibility</string>
+    <string name="Csr">CSR</string>
+
+
+
+
+
+
     <string name="Prog6">Prog6</string>
     <string name="Prog6.1">Harnessing the talent of children enrolled with us; in extra-curricular activities, is also one of our prime motives as we believe that exposure to extra-curricular activities (music, dance, painting etc.) is a must for ‘holistic development’.</string>
     <string name="Prog6.2">Thus, we arrange special classes for music, dance and painting for all our students. Some of these students are very talented whom we specially provide more opportunities and a platform to nurture their skill further and showcase their talent to the world because anyhow, poverty should not be the barrier to one’s growth and success in life.</string>
+
 </resources>

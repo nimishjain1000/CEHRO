@@ -93,6 +93,9 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.ginvolved) {
 
+            Intent i = new Intent(this,GetInvolvedActivity.class);
+            startActivity(i);
+
         } else if (id == R.id.stories) {
 
         } else if (id == R.id.nav_share) {
