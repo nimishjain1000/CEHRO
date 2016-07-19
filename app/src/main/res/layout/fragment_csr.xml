@@ -1,3 +1,8 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorAccent3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -5,9 +10,82 @@
     tools:context="com.example.arora.cehroindia.CsrFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="csr" />
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="CORPORATE ENGAGEMENT"
+            android:textSize="20sp"
+        />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="#000000"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Csr1"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Contact our Corporate Partnership Team"
+            />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Pradeep Kumar"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="pradeep@cehroindia.org"
+            />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+            android:layout_marginTop="10dp"
+        android:text="Ph: +91 9811263046"
+        />
+
+
+    </LinearLayout>
 
 </FrameLayout>
+    </ScrollView>
+

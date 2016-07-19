@@ -1,3 +1,8 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorAccent3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -5,9 +10,171 @@
     tools:context="com.example.arora.cehroindia.RespFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorAccent3"
+        android:layout_height="match_parent">
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Responsibility" />
+        android:background="@color/colorAccent1"
+        android:layout_height="wrap_content"
+        android:text="Take up responsibilty"
+        android:textSize="32sp"/>
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent1"
+            android:layout_height="wrap_content"
+            android:text="@string/Resp1"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/Resp2"
+            android:textSize="16sp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Become an Angel"
+                android:textSize="24sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="Sponsor education for 5 students"
+                android:textSize="24sp"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="30,000/year"
+                android:textSize="24sp"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Become a Gaurdian"
+                android:textSize="24sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="Sponsor education for 3 students"
+                android:textSize="24sp"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="18,000/year"
+                android:textSize="24sp"/>
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Become a Well Wisher"
+                android:textSize="24sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="Sponsor education for 1 student"
+                android:textSize="24sp"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="6,000/year"
+                android:textSize="24sp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 </FrameLayout>
+</ScrollView>
