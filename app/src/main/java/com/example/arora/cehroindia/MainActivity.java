@@ -99,9 +99,15 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.stories) {
 
         } else if (id == R.id.nav_share) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT,
+                    "Hey check out my app at: https://github.com/nimishjain1000/CEHRO ");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
 
-        } else if (id == R.id.nav_send) {
 
+        } else if (id == R.id.nav_contact) {
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
