@@ -40,7 +40,7 @@
         <activity android:name=".ArtisticIndiaActivity"
             android:label="Artistic India"
             android:parentActivityName=".MainActivity"/>
-<<<<<<< HEAD
+
         <activity
             android:label="Our Program"
             android:parentActivityName=".MainActivity"
@@ -63,8 +63,8 @@
         <activity android:name=".ArtisticIndiaActivity"
             android:label="Artistic India"
             android:parentActivityName=".OurProgramActivity"/>
-=======
->>>>>>> d8349c22d92856e450df4958ad0ca7f69d84f2f4
+
+
     </application>
 
 </manifest>
