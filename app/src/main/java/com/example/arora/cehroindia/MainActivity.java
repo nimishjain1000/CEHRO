@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,6 +18,9 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    FragmentManager mFragmentManager;
+    FragmentTransaction mFragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +46,15 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        /**
+         * Lets inflate the very first fragment
+         * Here , we are inflating the TabFragment as the first Fragment
+         */
+
+        mFragmentManager = getSupportFragmentManager();
+        mFragmentTransaction = mFragmentManager.beginTransaction();
+        mFragmentTransaction.replace(R.id.containerView,new AboutUsFragment()).commit();
     }
 
     @Override
@@ -83,18 +97,17 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.about_us) {
 
-            Intent i = new Intent(this,AboutUsActivity.class);
-            startActivity(i);
+            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.containerView,new AboutUsFragment()).commit();
             // Handle the camera action
         } else if (id == R.id.our_program) {
 
-            Intent i = new Intent(this,OurProgramActivity.class);
-            startActivity(i);
-
+            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).commit();
         } else if (id == R.id.ginvolved) {
 
-            Intent i = new Intent(this,GetInvolvedActivity.class);
-            startActivity(i);
+            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.containerView,new GetInvolvedFragment()).commit();
 
         } else if (id == R.id.stories) {
 
