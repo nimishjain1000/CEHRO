@@ -73,7 +73,7 @@
             android:layout_height="56dp"
 
             android:id="@+id/Pr"
-           android:src="@drawable/facebook"
+           android:src="@drawable/facebook1"
             android:layout_marginTop="10dp"
 
             />
@@ -83,7 +83,7 @@
 
             android:layout_marginTop="10dp"
             android:id="@+id/ph"
-            android:src="@drawable/phone"
+            android:src="@drawable/voice"
 
         />
 
