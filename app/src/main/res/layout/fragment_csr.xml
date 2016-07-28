@@ -64,23 +64,27 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:text="Pradeep Kumar"
             />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="20sp"
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="56dp"
+
+            android:id="@+id/Pr"
+           android:src="@drawable/facebook"
             android:layout_marginTop="10dp"
-            android:text="pradeep@cehroindia.org"
+
             />
-        <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="20sp"
+        <ImageView
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+
             android:layout_marginTop="10dp"
-        android:text="Ph: +91 9811263046"
+            android:id="@+id/ph"
+            android:src="@drawable/phone"
+
         />
 
 
