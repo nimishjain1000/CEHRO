@@ -18,35 +18,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".AboutUsActivity"
-            android:label="About Us"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".GetInvolvedActivity"
-            android:label="Get Involved"
-            android:parentActivityName=".MainActivity"/>
-        <activity
-            android:label="Our Program"
-            android:parentActivityName=".MainActivity"
-            android:name=".OurProgramActivity"/>
+
+
+
         <activity android:name=".EducatingIndiaProg"
             android:label="Educating India"
-            android:parentActivityName=".OurProgramActivity"/>
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".PadhoPadhaoProgramActivity"
             android:label="Padho-Padhao Program"
-            android:parentActivityName=".OurProgramActivity"/>
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".LivelihoodProgActivity"
             android:label="Livelihood Program"
-            android:parentActivityName=".OurProgramActivity"/>
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".TargetTwentyProgActivity"
             android:label="Target Twenty 20"
-            android:parentActivityName=".OurProgramActivity"/>
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".HealthProgActivity"
             android:label="Health And Hygeine Practices"
-            android:parentActivityName=".OurProgramActivity"/>
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".ArtisticIndiaActivity"
             android:label="Artistic India"
-            android:parentActivityName=".OurProgramActivity"/>
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
