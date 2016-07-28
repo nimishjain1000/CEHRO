@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/CEHRO.iml" filepath="$PROJECT_DIR$/CEHRO.iml" />
+=======
+>>>>>>> d8349c22d92856e450df4958ad0ca7f69d84f2f4
       <module fileurl="file://$PROJECT_DIR$/CehIndia-master.iml" filepath="$PROJECT_DIR$/CehIndia-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

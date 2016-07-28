@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.arora.cehroindia">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -18,13 +19,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".AboutUsActivity"
-            android:label="About Us"
+
+
+
+        <activity android:name=".EducatingIndiaProg"
+            android:label="Educating India"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".GetInvolvedActivity"
-            android:label="Get Involved"
+        <activity android:name=".PadhoPadhaoProgramActivity"
+            android:label="Padho-Padhao Program"
             android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LivelihoodProgActivity"
+            android:label="Livelihood Program"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".TargetTwentyProgActivity"
+            android:label="Target Twenty 20"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".HealthProgActivity"
+            android:label="Health And Hygeine Practices"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ArtisticIndiaActivity"
+            android:label="Artistic India"
+            android:parentActivityName=".MainActivity"/>
+<<<<<<< HEAD
         <activity
             android:label="Our Program"
             android:parentActivityName=".MainActivity"
@@ -47,6 +63,8 @@
         <activity android:name=".ArtisticIndiaActivity"
             android:label="Artistic India"
             android:parentActivityName=".OurProgramActivity"/>
+=======
+>>>>>>> d8349c22d92856e450df4958ad0ca7f69d84f2f4
     </application>
 
 </manifest>
