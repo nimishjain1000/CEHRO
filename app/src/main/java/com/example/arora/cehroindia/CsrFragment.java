@@ -51,7 +51,7 @@ public class CsrFragment extends Fragment {
 
         ImageView img1 = (ImageView)view.findViewById(R.id.ph);
 
-        img.setOnClickListener(new View.OnClickListener() {
+        img1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+91 9811263046"));
