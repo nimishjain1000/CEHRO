@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
-<<<<<<< HEAD
+
             android:textSize="20sp"
             android:text="Pradeep Kumar"
             />
@@ -82,9 +82,9 @@
         android:textSize="20sp"
             android:layout_marginTop="10dp"
         android:text="Ph: +91 9811263046"
-=======
-            android:textSize="24sp"
-            android:text="Pradeep Kumar"
+
+
+
             />
 
         <ImageView
@@ -104,7 +104,7 @@
             android:id="@+id/ph"
             android:src="@drawable/voice"
 
->>>>>>> d8349c22d92856e450df4958ad0ca7f69d84f2f4
+
         />
 
 

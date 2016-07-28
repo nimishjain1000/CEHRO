@@ -55,26 +55,19 @@ Under this programme, we provide basic knowledge of computer to all students enr
 
     <string name="Vol">Volunteer</string>
     <string name="Donate">Donate</string>
-<<<<<<< HEAD
 
-    <string name="Resp">Responsibility</string>
-    <string name="Resp1">For our generous donors who wish to contribute more to our organisation, we have yearly plans for sponsoring education of one or more students. Sponsors can schedule monthly meetings to check progress of their sponsored students.</string>
-    <string name="Resp2">Sponsor a child’s education and contribute in the making of an empowered citizenship. Your donations and involvement are deeply valued by us.</string>
-=======
->>>>>>> d8349c22d92856e450df4958ad0ca7f69d84f2f4
 
     <string name="Resp">Responsibility</string>
     <string name="Resp1">For our generous donors who wish to contribute more to our organisation, we have yearly plans for sponsoring education of one or more students. Sponsors can schedule monthly meetings to check progress of their sponsored students.</string>
     <string name="Resp2">Sponsor a child’s education and contribute in the making of an empowered citizenship. Your donations and involvement are deeply valued by us.</string>
 
+
+
     <string name="Csr">CSR</string>
     <string name="Csr1">Today, companies are proactively investing in social cause(s) through Corporate Social Responsibility (CSR). Though  the people in corporate sector have a strong will to dedicate their resources for a social cause, they find it difficult to reach the right people considering the demography and diverse social problems of the nation.</string>
 
-<<<<<<< HEAD
-=======
-    <string name="Csr">CSR</string>
-    <string name="Csr1">Today, companies are proactively investing in social cause(s) through Corporate Social Responsibility (CSR). Though  the people in corporate sector have a strong will to dedicate their resources for a social cause, they find it difficult to reach the right people considering the demography and diverse social problems of the nation.</string>
->>>>>>> d8349c22d92856e450df4958ad0ca7f69d84f2f4
+
+
 
     <string name="lostpassword">Connect with Pradeep on Facebook<a href="https://www.facebook.com/chaudharypradeep0212?fref=ts" target="_top">nnnn</a></string>
 </resources>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.arora.cehroindia">
-    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -40,31 +39,6 @@
         <activity android:name=".ArtisticIndiaActivity"
             android:label="Artistic India"
             android:parentActivityName=".MainActivity"/>
-
-        <activity
-            android:label="Our Program"
-            android:parentActivityName=".MainActivity"
-            android:name=".OurProgramActivity"/>
-        <activity android:name=".EducatingIndiaProg"
-            android:label="Educating India"
-            android:parentActivityName=".OurProgramActivity"/>
-        <activity android:name=".PadhoPadhaoProgramActivity"
-            android:label="Padho-Padhao Program"
-            android:parentActivityName=".OurProgramActivity"/>
-        <activity android:name=".LivelihoodProgActivity"
-            android:label="Livelihood Program"
-            android:parentActivityName=".OurProgramActivity"/>
-        <activity android:name=".TargetTwentyProgActivity"
-            android:label="Target Twenty 20"
-            android:parentActivityName=".OurProgramActivity"/>
-        <activity android:name=".HealthProgActivity"
-            android:label="Health And Hygeine Practices"
-            android:parentActivityName=".OurProgramActivity"/>
-        <activity android:name=".ArtisticIndiaActivity"
-            android:label="Artistic India"
-            android:parentActivityName=".OurProgramActivity"/>
-
-
     </application>
 
 </manifest>
