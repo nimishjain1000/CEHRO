@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.arora.cehroindia">
+<<<<<<< HEAD
+=======
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+>>>>>>> 34b35e5248100b0d2fe7d0a89410c05133f658c2
 
     <application
         android:allowBackup="true"
