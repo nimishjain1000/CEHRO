@@ -121,6 +121,10 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_contact) {
+
+            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.containerView,new ContactUsFragment()).commit();
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
