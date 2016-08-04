@@ -20,6 +20,8 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="map"
+        android:id="@+id/map"
         android:layout_margin="16dp"
         >
 
@@ -81,6 +83,7 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/mail"
         android:layout_margin="16dp">
 
         <LinearLayout
@@ -130,6 +133,7 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/call"
         android:layout_margin="16dp">
 
         <LinearLayout
