@@ -36,6 +36,7 @@
         <EditText
             android:id="@+id/input_name"
             android:layout_width="match_parent"
+            android:text=" "
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:hint="@string/hint_name" />
@@ -51,6 +52,7 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:text=" "
                 android:id="@+id/input_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,6 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
+                android:text=" "
                 android:hint="@string/hint_password" />
         </android.support.design.widget.TextInputLayout>
 
