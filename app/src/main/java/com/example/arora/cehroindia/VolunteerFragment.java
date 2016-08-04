@@ -15,7 +15,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 
 /**
@@ -23,7 +22,7 @@ import android.widget.Toolbar;
  */
 public class VolunteerFragment extends Fragment {
 
-    private Toolbar toolbar;
+
     private EditText inputName, inputEmail, inputPassword;
     private TextInputLayout inputLayoutName, inputLayoutEmail, inputLayoutPassword;
     private Button btnSignUp;
