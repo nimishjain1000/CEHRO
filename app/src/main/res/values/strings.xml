@@ -63,6 +63,15 @@ Under this programme, we provide basic knowledge of computer to all students enr
 
     <string name="Csr">CSR</string>
     <string name="Csr1">Today, companies are proactively investing in social cause(s) through Corporate Social Responsibility (CSR). Though  the people in corporate sector have a strong will to dedicate their resources for a social cause, they find it difficult to reach the right people considering the demography and diverse social problems of the nation.</string>
-
+    <string name="Csr2">We actively seek volunteers who can contribute to our programs, help in fundraising, organize events and support in campaigns.</string>
     <string name="lostpassword">Connect with Pradeep on Facebook<a href="https://www.facebook.com/chaudharypradeep0212?fref=ts" target="_top">nnnn</a></string>
+
+
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Phone No.</string>
+    <string name="btn_sign_up">Mail </string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the phone no.</string>
 </resources>
