@@ -74,4 +74,11 @@ Under this programme, we provide basic knowledge of computer to all students enr
     <string name="err_msg_name">Enter your full name</string>
     <string name="err_msg_email">Enter valid email address</string>
     <string name="err_msg_password">Enter the phone no.</string>
+    
+    <string name="mr_surjeet_description">Ever since the inception of CEHRO in 2012, there has been an exponential growth in the number of slum children who joined our centre as well as in the count</string>
+    <string name="mr_mustaque_description">Mod. Mustaque Siddiqui has a P.G. Diploma (Broadcast Technology) JMI and currently works as the Treasurers of CEHRO INDIA. He comes to CEHRO INDIA with 3 years experience.</string>
+    <string name="mr_pradeep_description">Pradeep currently serves as the Program manager of CEHRO INDIA. He is currently working at Samsung India as a Software Engineer for last 1.5 years. Pradeep is graduated from Netaji Subhas Institute of Technology.</string>
+    <string name="mr_saket_description">Saket kumar currently serves as secretary in CEHRO INDIA. He is graduated from MMEC with the degree in electrical engineering. He works 2 years as a project co-ordinator of S</string>
+    <string name="mr_deepak_description">Deepak Iyer is a business graduate and has over 10 years of work experience. He has been associated with top MNCs during this journey and currently serves as the marketing</string>
+    <string name="mr_amay_description">Amay currently serves as the Center Co-ordinator for CEHRO INDIA. He is currently working with Jabong.com as a software development Engineer. He is graduated from Netaji Subhas Institute of Technology.</string>
 </resources>
