@@ -60,11 +60,19 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
         TextView title = holder.titleTextView;
         ImageView programImage = holder.imageView;
         TextView description = holder.descriptionTextView;
+        TextView memberName = holder.memberNameTextView;
         holder.currentProgram = program;
 
         currentTitle = program.getTitle();
         title.setText(program.getTitle());
         description.setText(program.getDescription());
+        if(program.hasName()){
+            memberName.setText(program.getName());
+            memberName.setVisibility(View.VISIBLE);
+        }
+        else {
+            memberName.setVisibility(View.GONE);
+        }
         Glide.with(programImage.getContext())
                 .load(program.getimageResourceId())
                 .fitCenter()
@@ -83,6 +91,7 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
         public TextView titleTextView;
         public TextView descriptionTextView;
         public ImageView imageView;
+        public TextView memberNameTextView;
         public Program currentProgram;
 
 
@@ -93,6 +102,7 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
             titleTextView = (TextView) itemView.findViewById(R.id.program_title);
             imageView = (ImageView) itemView.findViewById(R.id.program_image);
             descriptionTextView = (TextView) itemView.findViewById(R.id.program_description);
+            memberNameTextView = (TextView) itemView.findViewById(R.id.member_name);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
