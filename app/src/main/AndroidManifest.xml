@@ -3,6 +3,7 @@
     package="com.example.arora.cehroindia">
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -40,6 +41,9 @@
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".ArtisticIndiaActivity"
             android:label="Artistic India"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".DonateActivity"
+            android:label="@string/Donate"
             android:parentActivityName=".MainActivity"/>
     </application>
 

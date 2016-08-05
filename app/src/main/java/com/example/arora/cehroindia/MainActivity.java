@@ -28,21 +28,24 @@ public class MainActivity extends AppCompatActivity
 
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
+    Intent intent;
+    Toolbar toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                intent = new Intent(MainActivity.this, DonateActivity.class);
+                MainActivity.this.startActivity(intent);
             }
         });
 
@@ -110,15 +113,20 @@ public class MainActivity extends AppCompatActivity
 
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containerView,new AboutUsFragment()).commit();
+            toolbar.setTitle(R.string.title_aboutus);
+
+
             // Handle the camera action
         } else if (id == R.id.our_program) {
 
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).commit();
+            toolbar.setTitle(R.string.title_our_program);
         } else if (id == R.id.ginvolved) {
 
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containerView,new GetInvolvedFragment()).commit();
+            toolbar.setTitle(R.string.title_get_involved);
 
         } else if (id == R.id.stories) {
 
@@ -135,6 +143,7 @@ public class MainActivity extends AppCompatActivity
 
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containerView,new ContactUsFragment()).commit();
+            toolbar.setTitle(R.string.title_contact_us);
 
         }
 
