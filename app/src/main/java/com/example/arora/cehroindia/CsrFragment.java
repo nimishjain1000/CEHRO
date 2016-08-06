@@ -54,8 +54,12 @@ public class CsrFragment extends Fragment {
         img1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+91 9811263046"));
+             /*   Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+91 9811263046"));
                   startActivity(intent);
+*/
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:+91 9811263046"));
+                startActivity(intent);
             }
         });
 
