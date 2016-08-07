@@ -49,21 +49,21 @@ public class CsrFragment extends Fragment {
         });
 
 
-        ImageView img1 = (ImageView)view.findViewById(R.id.ph);
+      //  ImageView img1 = (ImageView)view.findViewById(R.id.ph);
 
-        img1.setOnClickListener(new View.OnClickListener() {
+     /*  img1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-             /*   Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+91 9811263046"));
+                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+91 9811263046"));
                   startActivity(intent);
-*/
+
                 Intent intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:+91 9811263046"));
                 startActivity(intent);
             }
         });
 
-
+*/
         //Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "Your Phone_number"));
       //  startActivity(intent);
 

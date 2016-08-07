@@ -48,14 +48,14 @@ View view=inflater.inflate(R.layout.fragment_contact_us, container, false);
             public void onClick(View v) {
 
                 Intent mEmail = new Intent(Intent.ACTION_SEND);
-                mEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{ "nimishjain1000@gmail.com"});
+                mEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{ "pradeep@cehroindia.org"});
 
                 mEmail.setType("message/rfc822");
                 startActivity(Intent.createChooser(mEmail, "Choose an email client to send your"));
             }
         });
 
-        CardView img3 = (CardView) view.findViewById(R.id.call);
+      /*  CardView img3 = (CardView) view.findViewById(R.id.call);
 
         img3.setOnClickListener(new View.OnClickListener() {
 
@@ -65,7 +65,7 @@ View view=inflater.inflate(R.layout.fragment_contact_us, container, false);
                 startActivity(intent);
             }
         });
-
+*/
 
 
 
