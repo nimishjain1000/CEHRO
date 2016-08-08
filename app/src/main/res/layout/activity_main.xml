@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/donate"
+        android:src="@drawable/ic_card_giftcard_white_24dp"
 
         android:scaleType="centerCrop"
         android:adjustViewBounds="true" />

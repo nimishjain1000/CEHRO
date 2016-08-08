@@ -64,6 +64,8 @@ public class DonateActivity extends AppCompatActivity {
                 progDailog.dismiss();
             }
 
+            
+
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
                 super.onReceivedSslError(view, handler, error);

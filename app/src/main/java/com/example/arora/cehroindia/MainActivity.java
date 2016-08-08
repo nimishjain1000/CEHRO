@@ -128,8 +128,6 @@ public class MainActivity extends AppCompatActivity
             fragmentTransaction.replace(R.id.containerView,new GetInvolvedFragment()).commit();
             toolbar.setTitle(R.string.title_get_involved);
 
-        } else if (id == R.id.stories) {
-
         } else if (id == R.id.nav_share) {
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
