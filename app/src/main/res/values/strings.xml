@@ -81,4 +81,11 @@ Under this programme, we provide basic knowledge of computer to all students enr
     <string name="mr_saket_description">Saket kumar currently serves as secretary in CEHRO INDIA. He is graduated from MMEC with the degree in electrical engineering. He works 2 years as a project co-ordinator of S</string>
     <string name="mr_deepak_description">Deepak Iyer is a business graduate and has over 10 years of work experience. He has been associated with top MNCs during this journey and currently serves as the marketing</string>
     <string name="mr_amay_description">Amay currently serves as the Center Co-ordinator for CEHRO INDIA. He is currently working with Jabong.com as a software development Engineer. He is graduated from Netaji Subhas Institute of Technology.</string>
+
+    <string name="title_aboutus">About Us</string>
+    <string name="title_our_program">Our Program</string>
+    <string name="title_get_involved">Get Involved</string>
+    <string name="title_contact_us">Contact Us</string>
+
+
 </resources>

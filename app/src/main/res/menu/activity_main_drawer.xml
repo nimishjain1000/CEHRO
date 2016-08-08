@@ -14,14 +14,13 @@
             android:id="@+id/ginvolved"
 
             android:title="Get Involved" />
-        <item
-            android:id="@+id/stories"
 
-            android:title="Our Stories" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
+
+    <group android:checkableBehavior="single">
+
+
             <item
                 android:id="@+id/nav_share"
 
@@ -30,7 +29,7 @@
                 android:id="@+id/nav_contact"
 
                 android:title="Contact Us" />
-        </menu>
-    </item>
+
+    </group>
 
 </menu>
