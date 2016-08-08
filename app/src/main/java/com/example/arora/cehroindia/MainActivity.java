@@ -1,7 +1,11 @@
 package com.example.arora.cehroindia;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -21,6 +25,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import java.net.URI;
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -30,6 +38,7 @@ public class MainActivity extends AppCompatActivity
     FragmentTransaction mFragmentTransaction;
     Intent intent;
     Toolbar toolbar;
+    URL url;
 
 
     @Override
@@ -40,12 +49,21 @@ public class MainActivity extends AppCompatActivity
        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                intent = new Intent(MainActivity.this, DonateActivity.class);
-                MainActivity.this.startActivity(intent);
+                if(!isNetworkStatusAvialable (getApplicationContext())) {
+                    Toast.makeText(getApplicationContext(), "internet is not available", Toast.LENGTH_SHORT).show();
+
+                }
+                
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.payumoney.com/customer/users/paymentOptions/#/F4D4C2B2011CF9F89442BC3F6DAAE22C/cehroindiaorg/129741"));
+                startActivity(intent);
+
+
             }
         });
 
@@ -68,6 +86,19 @@ public class MainActivity extends AppCompatActivity
         mFragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).commit();
 
 
+    }
+
+
+    public static boolean isNetworkStatusAvialable (Context context) {
+        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager != null)
+        {
+            NetworkInfo netInfos = connectivityManager.getActiveNetworkInfo();
+            if(netInfos != null)
+                if(netInfos.isConnected())
+                    return true;
+        }
+        return false;
     }
 
     @Override
