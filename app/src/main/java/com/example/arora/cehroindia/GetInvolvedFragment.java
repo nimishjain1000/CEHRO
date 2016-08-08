@@ -92,7 +92,7 @@ public class GetInvolvedFragment extends Fragment {
                 case 0 :
                     return "Volunteer";
                 case 1 :
-                    return "Responsibilty";
+                    return "Responsibility";
                 case 2 :
                     return "CSR";
             }
