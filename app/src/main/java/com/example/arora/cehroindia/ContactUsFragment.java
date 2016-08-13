@@ -14,7 +14,6 @@ import android.view.ViewGroup;
  */
 
 public class ContactUsFragment extends Fragment {
-
     public ContactUsFragment() {
         // Required empty public constructor
     }
@@ -24,7 +23,11 @@ public class ContactUsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-View view=inflater.inflate(R.layout.fragment_contact_us, container, false);
+
+
+
+        View view=inflater.inflate(R.layout.fragment_contact_us, container, false);
+
         CardView img = (CardView) view.findViewById(R.id.map);
 
         img.setOnClickListener(new View.OnClickListener() {
@@ -48,28 +51,46 @@ View view=inflater.inflate(R.layout.fragment_contact_us, container, false);
             public void onClick(View v) {
 
                 Intent mEmail = new Intent(Intent.ACTION_SEND);
+
                 mEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{ "nimishjain1000@gmail.com"});
+
+                mEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{ "pradeep@cehroindia.org"});
+
 
                 mEmail.setType("message/rfc822");
                 startActivity(Intent.createChooser(mEmail, "Choose an email client to send your"));
             }
         });
 
+
         CardView img3 = (CardView) view.findViewById(R.id.call);
+
+      /*  CardView img3 = (CardView) view.findViewById(R.id.call);
+>>>>>>> 91d202c4ba91f40cc89eb3560eeb3befca07b5c7
 
         img3.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
+<<<<<<< HEAD
                 Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+91 9811263046"));
                 startActivity(intent);
             }
         });
+
+=======
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:+91 9811263046"));
+                startActivity(intent);
+            }
+        });
+*/
 
 
 
 
         return view;
     }
+
 
 
 

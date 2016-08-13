@@ -1,6 +1,11 @@
 package com.example.arora.cehroindia;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -15,7 +20,15 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.net.URI;
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -23,20 +36,34 @@ public class MainActivity extends AppCompatActivity
 
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
+    Intent intent;
+    Toolbar toolbar;
+    URL url;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+       toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                if(!isNetworkStatusAvialable (getApplicationContext())) {
+                    Toast.makeText(getApplicationContext(), "internet is not available", Toast.LENGTH_SHORT).show();
+
+                }
+                
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.payumoney.com/customer/users/paymentOptions/#/F4D4C2B2011CF9F89442BC3F6DAAE22C/cehroindiaorg/129741"));
+                startActivity(intent);
+
+
             }
         });
 
@@ -57,6 +84,22 @@ public class MainActivity extends AppCompatActivity
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
         mFragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).commit();
+
+
+    }
+
+
+    public static boolean isNetworkStatusAvialable (Context context) {
+        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager != null)
+        {
+            NetworkInfo netInfos = connectivityManager.getActiveNetworkInfo();
+            if(netInfos != null)
+                if(netInfos.isConnected())
+                    return true;
+        }
+        return false;
+
     }
 
     @Override
@@ -102,17 +145,20 @@ public class MainActivity extends AppCompatActivity
 
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containerView,new AboutUsFragment()).commit();
+            toolbar.setTitle(R.string.title_aboutus);
+
+
             // Handle the camera action
         } else if (id == R.id.our_program) {
 
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).commit();
+            toolbar.setTitle(R.string.title_our_program);
         } else if (id == R.id.ginvolved) {
 
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containerView,new GetInvolvedFragment()).commit();
-
-        } else if (id == R.id.stories) {
+            toolbar.setTitle(R.string.title_get_involved);
 
         } else if (id == R.id.nav_share) {
             Intent sendIntent = new Intent();
@@ -127,6 +173,7 @@ public class MainActivity extends AppCompatActivity
 
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containerView,new ContactUsFragment()).commit();
+            toolbar.setTitle(R.string.title_contact_us);
 
         }
 
@@ -134,4 +181,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }

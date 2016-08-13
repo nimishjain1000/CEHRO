@@ -1,28 +1,18 @@
 package com.example.arora.cehroindia;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
-import android.media.tv.TvContract;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.arora.cehroindia.EducatingIndiaProg;
-import com.example.arora.cehroindia.PadhoPadhaoProgramActivity;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by mac on 20/07/16.
@@ -60,11 +50,19 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
         TextView title = holder.titleTextView;
         ImageView programImage = holder.imageView;
         TextView description = holder.descriptionTextView;
+        TextView memberName = holder.memberNameTextView;
         holder.currentProgram = program;
 
         currentTitle = program.getTitle();
         title.setText(program.getTitle());
         description.setText(program.getDescription());
+        if(program.hasName()){
+            memberName.setText(program.getName());
+            memberName.setVisibility(View.VISIBLE);
+        }
+        else {
+            memberName.setVisibility(View.GONE);
+        }
         Glide.with(programImage.getContext())
                 .load(program.getimageResourceId())
                 .fitCenter()
@@ -83,6 +81,7 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
         public TextView titleTextView;
         public TextView descriptionTextView;
         public ImageView imageView;
+        public TextView memberNameTextView;
         public Program currentProgram;
 
 
@@ -93,6 +92,7 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
             titleTextView = (TextView) itemView.findViewById(R.id.program_title);
             imageView = (ImageView) itemView.findViewById(R.id.program_image);
             descriptionTextView = (TextView) itemView.findViewById(R.id.program_description);
+            memberNameTextView = (TextView) itemView.findViewById(R.id.member_name);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -119,12 +119,12 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
                             break;
 
                         case "Health And Hygeine Programme":
-                            intent = new Intent(v.getContext(), TargetTwentyProgActivity.class);
+                            intent = new Intent(v.getContext(), HealthProgActivity.class);
                             v.getContext().startActivity(intent);
                             break;
 
                         case "Target Twenty 20":
-                            intent = new Intent(v.getContext(), HealthProgActivity.class);
+                            intent = new Intent(v.getContext(), TargetTwentyProgActivity.class);
                             v.getContext().startActivity(intent);
                             break;
 

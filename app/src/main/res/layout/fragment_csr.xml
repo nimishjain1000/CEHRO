@@ -63,6 +63,7 @@
     <LinearLayout
         style="@style/Widget.CardContent"
         android:layout_width="match_parent"
+        android:background="@color/material_blue_grey_800"
         android:layout_height="wrap_content">
 
 
@@ -71,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="20sp"
+            android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:text="Contact our Corporate Partnership Team"
             />
@@ -86,7 +88,12 @@
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
 
-            android:textSize="20sp"
+
+
+
+            android:textSize="24sp"
+            android:textColor="@color/white"
+
             android:text="Pradeep Kumar"
             />
         <LinearLayout
@@ -121,16 +128,11 @@
             android:layout_marginTop="10dp"
 
             />
-        <ImageView
-        android:layout_width="80dp"
-        android:layout_height="56dp"
 
-            android:layout_marginTop="10dp"
-            android:id="@+id/ph"
-            android:src="@drawable/voice"
 
 
         />
+
             </LinearLayout>
         </LinearLayout>
         </android.support.v7.widget.CardView>
