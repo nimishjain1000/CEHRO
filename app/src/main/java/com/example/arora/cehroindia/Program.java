@@ -1,5 +1,6 @@
 package com.example.arora.cehroindia;
 
+import android.content.res.Resources;
 import android.widget.TextView;
 
 /**
@@ -55,4 +56,13 @@ public class Program {
     public boolean hasName(){
         return mName != NO_NAME_AVAILABLE;
     }
+
+    public  int getScreenWidth() {
+        return Resources.getSystem().getDisplayMetrics().widthPixels;
+    }
+
+    public int getScreenHeight() {
+        return Resources.getSystem().getDisplayMetrics().heightPixels;
+    }
+
 }

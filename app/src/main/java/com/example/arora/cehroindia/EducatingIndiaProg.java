@@ -2,8 +2,10 @@ package com.example.arora.cehroindia;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,7 +14,14 @@ import android.widget.TextView;
  */
 
 public class EducatingIndiaProg extends AppCompatActivity {
-    private Log log;
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
+
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,7 +29,7 @@ public class EducatingIndiaProg extends AppCompatActivity {
         setContentView(R.layout.program_detail);
 
         ImageView programImage = (ImageView) findViewById(R.id.program_spec_image);
-        programImage.setImageResource(R.drawable.cehro2);
+        programImage.setImageResource(R.drawable.educat_final);
 
         TextView programTitle = (TextView) findViewById(R.id.program_spec_title);
         programTitle.setText(R.string.Title_Educating_India);
@@ -29,11 +38,10 @@ public class EducatingIndiaProg extends AppCompatActivity {
         programDescription.setText(R.string.Description_Educating_India);
 
 
+
+
+
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        log.v("CDA", "onBackPressed Called");
-    }
+
 }

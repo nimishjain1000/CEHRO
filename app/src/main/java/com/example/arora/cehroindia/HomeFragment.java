@@ -66,19 +66,19 @@ public class HomeFragment extends Fragment implements YouTubePlayer.OnInitialize
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.youtubeVideo, mYouTubePlayerSupportFragment);
         fragmentTransaction.commit();
-        Log.d("onStart","onStart");
+       // Log.d("onStart","onStart");
 
 
     }
 
 
-    @Override
-    public void onResume() {
+   /* @Override
+   public void onResume() {
         super.onResume();
-        Log.d("onResume","onResume");
-    }
+       Log.d("onResume","onResume");
+    }*/
 
-    @Override
+  /*  @Override
     public void onPause() {
         super.onPause();
         Log.d("onPause", "onPause: ");
@@ -108,7 +108,7 @@ public class HomeFragment extends Fragment implements YouTubePlayer.OnInitialize
     public void onDetach() {
         super.onDetach();
         Log.d("onDetach", "onDetach: ");
-    }
+    }*/
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
         if(!b){

@@ -1,28 +1,26 @@
 package com.example.arora.cehroindia;
 
-import android.content.ClipData;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.media.tv.TvContract;
-import android.support.v4.app.FragmentManager;
+import android.graphics.Point;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
+import android.view.WindowManager;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.arora.cehroindia.EducatingIndiaProg;
-import com.example.arora.cehroindia.PadhoPadhaoProgramActivity;
-
-import org.w3c.dom.Text;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by mac on 20/07/16.
@@ -37,6 +35,7 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
     public static CardView cardView;
     public static int position;
     public String currentTitle;
+
 
 
     public RecyclerAdapter(Context context, ArrayList<Program> programs) {
@@ -73,10 +72,16 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
         else {
             memberName.setVisibility(View.GONE);
         }
+
+       // programImage.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,(int) (program.getScreenWidth() / mPrograms.get(position).getScreenHeight())));
+
         Glide.with(programImage.getContext())
                 .load(program.getimageResourceId())
                 .fitCenter()
+                .crossFade()
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(programImage);
+
 
 
     }
@@ -103,6 +108,7 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
             imageView = (ImageView) itemView.findViewById(R.id.program_image);
             descriptionTextView = (TextView) itemView.findViewById(R.id.program_description);
             memberNameTextView = (TextView) itemView.findViewById(R.id.member_name);
+            setIsRecyclable(false);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -129,12 +135,12 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
                             break;
 
                         case "Health And Hygeine Programme":
-                            intent = new Intent(v.getContext(), TargetTwentyProgActivity.class);
+                            intent = new Intent(v.getContext(), HealthProgActivity.class);
                             v.getContext().startActivity(intent);
                             break;
 
                         case "Target Twenty 20":
-                            intent = new Intent(v.getContext(), HealthProgActivity.class);
+                            intent = new Intent(v.getContext(), TargetTwentyProgActivity.class);
                             v.getContext().startActivity(intent);
                             break;
 

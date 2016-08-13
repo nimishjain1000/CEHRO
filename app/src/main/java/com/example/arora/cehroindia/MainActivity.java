@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity
                     return true;
         }
         return false;
+
     }
 
     @Override
@@ -159,7 +160,7 @@ public class MainActivity extends AppCompatActivity
         else if (id == R.id.our_program) {
 
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).commit();
+            fragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).addToBackStack("our program fragment added to back stack").commit();
             toolbar.setTitle(R.string.title_our_program);
         } else if (id == R.id.ginvolved) {
 
@@ -189,5 +190,27 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("onStart", "onStart: ");
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("onResume", "onResume: ");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("onRestart", "onRestart: ");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("onPause", "onPause: ");
+    }
 }

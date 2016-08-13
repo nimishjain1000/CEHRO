@@ -56,14 +56,23 @@ Under this programme, we provide basic knowledge of computer to all students enr
     <string name="Vol">Volunteer</string>
     <string name="Donate">Donate</string>
 
+
     <string name="Resp">Responsibility</string>
     <string name="Resp1">For our generous donors who wish to contribute more to our organisation, we have yearly plans for sponsoring education of one or more students. Sponsors can schedule monthly meetings to check progress of their sponsored students.</string>
     <string name="Resp2">Sponsor a child’s education and contribute in the making of an empowered citizenship. Your donations and involvement are deeply valued by us.</string>
 
 
+
     <string name="Csr">CSR</string>
     <string name="Csr1">Today, companies are proactively investing in social cause(s) through Corporate Social Responsibility (CSR). Though  the people in corporate sector have a strong will to dedicate their resources for a social cause, they find it difficult to reach the right people considering the demography and diverse social problems of the nation.</string>
+
+
+
+
+
+
     <string name="Csr2">We actively seek volunteers who can contribute to our programs, help in fundraising, organize events and support in campaigns.</string>
+
     <string name="lostpassword">Connect with Pradeep on Facebook<a href="https://www.facebook.com/chaudharypradeep0212?fref=ts" target="_top">nnnn</a></string>
 
 
@@ -88,7 +97,7 @@ Under this programme, we provide basic knowledge of computer to all students enr
     <string name="title_contact_us">Contact Us</string>
     <string name="title_home">Cehro India</string>
 
-    <string name="home_objective">"To build a better India through realizing the dream of dignified life to the under privileged by catering their basic needs of Education Health &amp; livelihood."</string>
+    <string name="home_objective">&quot;To build a better India through realizing the dream of dignified life to the under privileged by catering their basic needs of Education Health &amp; livelihood.&quot;</string>
     <string name="home_objective1"> * Centre for Education and Health Research Organization (CEHRO INDIA) is a non-profit making autonomous body registered under 1860 Societies Act.</string>
     <string name="home_objective2"> * Founded in 2012 by the brain-child youths coming from premier institutes of India (IIT,DCE/NSIT, NUEPA, JNU, Jamia, DU, IPU etc.)</string>
     <string name="home_objective3"> * To work for the betterment of the marginalize, migrant &amp; Slum children &amp; community in term of their Education Health Hygiene &amp; Livelihood</string>

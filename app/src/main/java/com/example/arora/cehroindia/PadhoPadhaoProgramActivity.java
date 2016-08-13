@@ -3,6 +3,7 @@ package com.example.arora.cehroindia;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,7 +20,7 @@ public class PadhoPadhaoProgramActivity extends AppCompatActivity {
         setContentView(R.layout.program_detail);
 
         ImageView programImage = (ImageView) findViewById(R.id.program_spec_image);
-        programImage.setImageResource(R.drawable.cehro2);
+        programImage.setImageResource(R.drawable.pado_final);
 
         TextView programTitle = (TextView) findViewById(R.id.program_spec_title);
         programTitle.setText(R.string.Title_Padho_Padhao);
@@ -27,6 +28,13 @@ public class PadhoPadhaoProgramActivity extends AppCompatActivity {
         TextView programDescription = (TextView) findViewById(R.id.program_spec_description);
         programDescription.setText(R.string.Description_Padho_Padhao);
 
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
 
     }
 }
