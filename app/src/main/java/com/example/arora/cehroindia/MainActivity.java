@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity
                     Toast.makeText(getApplicationContext(), "internet is not available", Toast.LENGTH_SHORT).show();
 
                 }
-                
+
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.payumoney.com/customer/users/paymentOptions/#/F4D4C2B2011CF9F89442BC3F6DAAE22C/cehroindiaorg/129741"));
                 startActivity(intent);
 
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
-        mFragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).commit();
+        mFragmentTransaction.replace(R.id.containerView,new HomeFragment()).commit();
 
 
     }
@@ -148,7 +148,15 @@ public class MainActivity extends AppCompatActivity
 
 
             // Handle the camera action
-        } else if (id == R.id.our_program) {
+        }
+        else if(id == R.id.home){
+            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.containerView,new HomeFragment()).commit();
+            toolbar.setTitle(R.string.title_home);
+        }
+
+
+        else if (id == R.id.our_program) {
 
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).commit();

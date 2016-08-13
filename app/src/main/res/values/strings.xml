@@ -86,6 +86,19 @@ Under this programme, we provide basic knowledge of computer to all students enr
     <string name="title_our_program">Our Program</string>
     <string name="title_get_involved">Get Involved</string>
     <string name="title_contact_us">Contact Us</string>
+    <string name="title_home">Cehro India</string>
 
+    <string name="home_objective">"To build a better India through realizing the dream of dignified life to the under privileged by catering their basic needs of Education Health &amp; livelihood."</string>
+    <string name="home_objective1"> * Centre for Education and Health Research Organization (CEHRO INDIA) is a non-profit making autonomous body registered under 1860 Societies Act.</string>
+    <string name="home_objective2"> * Founded in 2012 by the brain-child youths coming from premier institutes of India (IIT,DCE/NSIT, NUEPA, JNU, Jamia, DU, IPU etc.)</string>
+    <string name="home_objective3"> * To work for the betterment of the marginalize, migrant &amp; Slum children &amp; community in term of their Education Health Hygiene &amp; Livelihood</string>
+    <string name="home_journey1"> * Stated in 2012 with 40 kids in small room with Mission Education program</string>
+    <string name="home_journey2"> * At present 400+ kids with 10 programs.</string>
+    <string name="home_journey3"> * 75+ Students get placed in different company till now through our Livelihood program stared in 2014</string>
+    <string name="home_journey4"> * Bigger big venue of capacity 500 kids &amp; 50 volunteer</string>
+    <string name="home_journey5"> * Organize &amp; Participated in many national competition</string>
+    <string name="home_next1"> * To Set up a Library with capacity of 500 children.</string>
+    <string name="home_next2"> * Digital computer Centre of Capacity 100 students at time.</string>
+    <string name="home_next3"> * Research Centre for science Technology &amp; innovation.</string>
 
 </resources>
