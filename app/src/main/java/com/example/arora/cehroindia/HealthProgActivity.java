@@ -19,7 +19,7 @@ public class HealthProgActivity extends AppCompatActivity {
         setContentView(R.layout.program_detail);
 
         ImageView programImage = (ImageView) findViewById(R.id.program_spec_image);
-        programImage.setImageResource(R.drawable.cehro2);
+        programImage.setImageResource(R.drawable.health_final);
 
         TextView programTitle = (TextView) findViewById(R.id.program_spec_title);
         programTitle.setText(R.string.Title_Health);
