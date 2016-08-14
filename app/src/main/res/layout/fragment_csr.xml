@@ -1,140 +1,118 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
 
-    tools:context="com.example.arora.cehroindia.CsrFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/cehro2"
-        android:layout_margin="16dp"/>
+        tools:context="com.example.arora.cehroindia.CsrFragment">
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
-
-    <LinearLayout
-        style="@style/Widget.CardContent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="CORPORATE ENGAGEMENT"
-            android:textSize="20sp"
-        />
-
-
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:layout_marginTop="10dp"
-            android:text="@string/Csr1"/>
-
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
-    <LinearLayout
-        style="@style/Widget.CardContent"
-        android:layout_width="match_parent"
-        android:background="@color/material_blue_grey_800"
-        android:layout_height="wrap_content">
-
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:text="Contact our Corporate Partnership Team"
-            />
-
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#000000"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-
-
-
-
-            android:textSize="24sp"
-            android:textColor="@color/white"
-
-            android:text="Pradeep Kumar"
-            />
+        <!-- TODO: Update blank fragment layout -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
-            android:text="pradeep@cehroindia.org"
-            android:textColor="@color/white"
-            />
-        <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="20sp"
-            android:layout_marginTop="10dp"
-        android:text="Ph: +91 9811263046" />
+            android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="56dp"
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/cehro2" />
 
-            android:id="@+id/Pr"
-           android:src="@drawable/facebook1"
-            android:layout_marginTop="10dp" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="CORPORATE ENGAGEMENT"
+                        android:textSize="20sp" />
 
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/Csr1"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/material_blue_grey_800">
 
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Contact our Corporate Partnership Team"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
 
-            </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+
+
+                        android:text="Pradeep Kumar"
+                        android:textColor="@color/white"
+
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:text="pradeep@cehroindia.org"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                    
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
         </LinearLayout>
-        </android.support.v7.widget.CardView>
 
-
-    </LinearLayout>
-
-</FrameLayout>
-    </ScrollView>
+    </FrameLayout>
+</ScrollView>
 

@@ -113,27 +113,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -143,30 +122,38 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.about_us) {
 
-            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.containerView,new AboutUsFragment()).commit();
+             mFragmentTransaction = mFragmentManager.beginTransaction();
+            mFragmentTransaction.replace(R.id.containerView,new AboutUsFragment()).commit();
             toolbar.setTitle(R.string.title_aboutus);
+
 
 
             // Handle the camera action
         }
         else if(id == R.id.home){
-            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.containerView,new HomeFragment()).commit();
+             mFragmentTransaction = mFragmentManager.beginTransaction();
+            mFragmentTransaction.replace(R.id.containerView,new HomeFragment()).commit();
             toolbar.setTitle(R.string.title_home);
+
         }
 
 
         else if (id == R.id.our_program) {
+           mFragmentTransaction = mFragmentManager.beginTransaction();
 
-            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).addToBackStack("our program fragment added to back stack").commit();
+            mFragmentTransaction.replace(R.id.containerView,new OurProgramFragment()).commit();
             toolbar.setTitle(R.string.title_our_program);
+
+
+
+
+
         } else if (id == R.id.ginvolved) {
 
-            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.containerView,new GetInvolvedFragment()).commit();
+            mFragmentTransaction = mFragmentManager.beginTransaction();
+            mFragmentTransaction.replace(R.id.containerView,new GetInvolvedFragment()).commit();
             toolbar.setTitle(R.string.title_get_involved);
+
 
         } else if (id == R.id.nav_share) {
             Intent sendIntent = new Intent();
@@ -177,11 +164,13 @@ public class MainActivity extends AppCompatActivity
             startActivity(sendIntent);
 
 
+
         } else if (id == R.id.nav_contact) {
 
-            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.containerView,new ContactUsFragment()).commit();
+         mFragmentTransaction = mFragmentManager.beginTransaction();
+            mFragmentTransaction.replace(R.id.containerView,new ContactUsFragment()).commit();
             toolbar.setTitle(R.string.title_contact_us);
+
 
         }
 
@@ -190,27 +179,5 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.d("onStart", "onStart: ");
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.d("onResume", "onResume: ");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.d("onRestart", "onRestart: ");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d("onPause", "onPause: ");
-    }
 }

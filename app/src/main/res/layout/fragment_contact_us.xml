@@ -24,12 +24,23 @@
         android:id="@+id/map"
         android:layout_margin="16dp"
         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/material_blue_grey_800">
 
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_location_on_white_24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="2dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/material_blue_grey_800">
+            >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -37,7 +48,7 @@
                 android:layout_height="match_parent"
                 android:text="OFFICE ADDRESS"
                 android:textSize="25sp"
-                android:layout_marginLeft="8dp"
+
                 android:layout_gravity="center"
                 android:textColor="@color/white"/>
 
@@ -49,7 +60,7 @@
                 android:text="Prajapati Shiv Mandir"
 
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="8dp"
+
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:textColor="@color/white"/>
@@ -59,7 +70,7 @@
 
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="8dp"
+
                 android:text="Munirka Village Opp JNU Main"
                 android:textSize="20sp"
                 android:layout_gravity="center"
@@ -71,11 +82,12 @@
 
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="8dp"
+
                 android:text="Gate New Delhi -110067"
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:textColor="@color/white"/>
+        </LinearLayout>
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
@@ -85,6 +97,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/mail"
         android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/material_blue_grey_800"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_email_white_24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="2dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -98,7 +123,7 @@
                 android:layout_height="match_parent"
                 android:text="EMAIL"
                 android:textSize="25sp"
-                android:layout_marginLeft="8dp"
+
                 android:layout_gravity="center"
                 android:textColor="@color/white"/>
 
@@ -110,7 +135,7 @@
                 android:text="pradeep@cehroindia.org"
 
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="8dp"
+
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:textColor="@color/white"/>
@@ -120,12 +145,13 @@
 
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="8dp"
+
                 android:text="donate@cehroindia.org"
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/white"/>
+        </LinearLayout>
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
@@ -148,7 +174,7 @@
                 android:layout_height="match_parent"
                 android:text="PHONE NUMBER"
                 android:textSize="25sp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_gravity="center"
                 android:textColor="@color/white"/>
 
@@ -160,7 +186,7 @@
                 android:text="025 1234 5678"
 
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:textColor="@color/white"/>
@@ -170,7 +196,7 @@
 
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:text="025 1234 5779"
                 android:textSize="20sp"
                 android:layout_gravity="center"
@@ -196,7 +222,7 @@
                 android:layout_height="match_parent"
                 android:text="TIME HOURS"
                 android:textSize="25sp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_gravity="center"
                 android:textColor="@color/white"/>
 
@@ -208,7 +234,7 @@
                 android:text="Monday to Friday: 10am to 7pm"
 
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:textColor="@color/white"/>
@@ -218,7 +244,7 @@
 
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:text="Saturday: 10am to 4pm"
                 android:textSize="20sp"
                 android:layout_gravity="center"
@@ -229,7 +255,7 @@
 
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:text="Sunday: 12am to 4pm"
                 android:textSize="20sp"
                 android:layout_gravity="center"

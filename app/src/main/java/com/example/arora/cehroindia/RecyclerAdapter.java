@@ -78,8 +78,6 @@ RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
         Glide.with(programImage.getContext())
                 .load(program.getimageResourceId())
                 .fitCenter()
-                .crossFade()
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(programImage);
 
 

@@ -63,27 +63,8 @@ public class ContactUsFragment extends Fragment {
         });
 
 
-        CardView img3 = (CardView) view.findViewById(R.id.call);
 
-      /*  CardView img3 = (CardView) view.findViewById(R.id.call);
->>>>>>> 91d202c4ba91f40cc89eb3560eeb3befca07b5c7
 
-        img3.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-<<<<<<< HEAD
-                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+91 9811263046"));
-                startActivity(intent);
-            }
-        });
-
-=======
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:+91 9811263046"));
-                startActivity(intent);
-            }
-        });
-*/
 
 
 
